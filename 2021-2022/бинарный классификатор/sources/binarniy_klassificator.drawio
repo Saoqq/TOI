@@ -1,0 +1,54 @@
+<mxfile host="65bd71144e">
+    <diagram id="B98Myi7qIVIVGV0O9Yf8" name="Page-1">
+        <mxGraphModel dx="712" dy="564" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="1" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="huDF47PdF3qLj8TZO268-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="huDF47PdF3qLj8TZO268-2" target="huDF47PdF3qLj8TZO268-4" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="386" y="220" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="huDF47PdF3qLj8TZO268-2" value="Начало" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="325" y="20" width="110" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="huDF47PdF3qLj8TZO268-9" value="" style="group" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="240" y="70" width="280" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="huDF47PdF3qLj8TZO268-4" value="" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;perimeterSpacing=0;align=center;" parent="huDF47PdF3qLj8TZO268-9" vertex="1">
+                    <mxGeometry width="280" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="huDF47PdF3qLj8TZO268-8" value="Кол-во классов \( M \)&lt;br&gt;&lt;div&gt;Априорные вероятности классов&lt;/div&gt;Образ \( x \)&lt;br&gt;Значения вероятностей&lt;br&gt;для каждого признака принять значение 1 (или 0)&lt;br&gt;(&amp;nbsp; \( p_{k,i} = p(x_k = 1|\omega_i), i=\overline{1,M} \)&amp;nbsp; )" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="huDF47PdF3qLj8TZO268-9" vertex="1">
+                    <mxGeometry x="20" width="243.03" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="huDF47PdF3qLj8TZO268-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="huDF47PdF3qLj8TZO268-10" target="huDF47PdF3qLj8TZO268-12" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="huDF47PdF3qLj8TZO268-10" value="Задать разделяющую функцию в виде&lt;br&gt;\( g'_i(x) = \sum\limits_{k=1}^n(x_k ln(p_{k,i}) + (1-x_k) ln(1-p_{k,i}))&amp;nbsp; + ln(p(\omega_i))\)&lt;br&gt;\( i = \overline{1,M} \)&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="190" y="230" width="380" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="huDF47PdF3qLj8TZO268-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="huDF47PdF3qLj8TZO268-8" target="huDF47PdF3qLj8TZO268-10" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="huDF47PdF3qLj8TZO268-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="huDF47PdF3qLj8TZO268-12" target="huDF47PdF3qLj8TZO268-13" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="huDF47PdF3qLj8TZO268-12" value="найти класс, которому соответствует максимальное значение разделяющей функции для данного образа&lt;br&gt;\( \omega_i : g'_i (x) \geq g'_j (x) \), \( j= \overline{1,M} , i \neq j \)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="190" y="360" width="380" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="huDF47PdF3qLj8TZO268-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="huDF47PdF3qLj8TZO268-13" target="huDF47PdF3qLj8TZO268-16" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="huDF47PdF3qLj8TZO268-13" value="" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+                    <mxGeometry x="190" y="480" width="370" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="huDF47PdF3qLj8TZO268-16" value="Конец" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="600" width="110" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="&lt;br&gt;&lt;br&gt;&lt;span style=&quot;color: rgb(0 , 0 , 0) ; font-family: &amp;#34;helvetica&amp;#34; ; font-size: 12px ; font-style: normal ; font-weight: 400 ; letter-spacing: normal ; text-align: center ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; background-color: rgb(248 , 249 , 250) ; display: inline ; float: none&quot;&gt;найденный класс соответствует классу, к которому относится данный образ.&lt;br&gt;&lt;/span&gt;&lt;font color=&quot;#ff0000&quot;&gt;в исходнике тут пустой прямоугольник, текст взят из исходника 6 лекции(Наив. Байес. классиф.)&lt;/font&gt;" style="text;whiteSpace=wrap;html=1;fontSize=7;" vertex="1" parent="1">
+                    <mxGeometry x="210" y="480" width="330" height="70" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
