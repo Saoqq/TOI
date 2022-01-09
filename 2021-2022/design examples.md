@@ -13,6 +13,7 @@
 
 # Символы tex
 $\approx$  
+$\equiv$  
 $\rightarrow$   
 $\omega$  
 
@@ -60,3 +61,5 @@ g''_{ij}
 \small w_j
 \end{array}
 l'_{0ij}$
+
+# амогус
