@@ -43,12 +43,7 @@ d^{(i)}(x^{(i)T}\omega -b_0) \geq 1, i=\overline{1,N}
 $$ 
 
 $
-\def\arraystretch{0.6}
-\begin{array}{c}
-\small min\\
-\small i
-\end{array}
-d^{(i)}(x^{(i)T}\omega-b_0)=1
+\underset{i}{min} \ d^{(i)}(x^{(i)T}\omega-b_0)=1
 $.
 
 $\omega_i: 
