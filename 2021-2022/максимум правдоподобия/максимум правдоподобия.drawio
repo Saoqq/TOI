@@ -1,0 +1,46 @@
+<mxfile host="65bd71144e">
+    <diagram id="1nuQO09vybNOhaYmFkF1" name="Page-1">
+        <mxGraphModel dx="276" dy="649" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="1" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="zMBQPZwOg3jAW1KsyyCJ-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;startArrow=none;startFill=0;" parent="1" source="zMBQPZwOg3jAW1KsyyCJ-1" target="zMBQPZwOg3jAW1KsyyCJ-2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="zMBQPZwOg3jAW1KsyyCJ-1" value="начало" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="328.5" y="220" width="90" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="zMBQPZwOg3jAW1KsyyCJ-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" parent="1" source="zMBQPZwOg3jAW1KsyyCJ-2" target="zMBQPZwOg3jAW1KsyyCJ-9" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="zMBQPZwOg3jAW1KsyyCJ-2" value="количество классов \(M\)&lt;br&gt;функции правдоподобия&lt;br&gt;образ \(x\), который необходимо&lt;br&gt;распознать" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;strokeColor=default;fillColor=default;allowArrows=1;connectable=1;" parent="1" vertex="1">
+                    <mxGeometry x="242.75" y="300" width="261.5" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="zMBQPZwOg3jAW1KsyyCJ-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=none;startFill=0;endArrow=none;endFill=0;" parent="1" source="zMBQPZwOg3jAW1KsyyCJ-9" target="zMBQPZwOg3jAW1KsyyCJ-10" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="zMBQPZwOg3jAW1KsyyCJ-9" value="задать разделяющую функцию в виде&lt;br&gt;\(g_i(x) = p(x(\omega_i)), i = \overline{1,M}\)" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;fillColor=default;" parent="1" vertex="1">
+                    <mxGeometry x="257" y="380" width="233" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="zMBQPZwOg3jAW1KsyyCJ-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=none;startFill=0;endArrow=none;endFill=0;" parent="1" source="zMBQPZwOg3jAW1KsyyCJ-10" target="zMBQPZwOg3jAW1KsyyCJ-11" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="zMBQPZwOg3jAW1KsyyCJ-10" value="найти индекс функции \(g_i(x) , i = \overline{1,M}\), которая для данного образа принимает наибольшее значение среди остальных" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;fillColor=default;" parent="1" vertex="1">
+                    <mxGeometry x="257" y="470" width="233" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="zMBQPZwOg3jAW1KsyyCJ-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=none;startFill=0;endArrow=none;endFill=0;" parent="1" source="zMBQPZwOg3jAW1KsyyCJ-11" target="zMBQPZwOg3jAW1KsyyCJ-12" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="zMBQPZwOg3jAW1KsyyCJ-11" value="индекс функции соответствует индексу класса, к которому&lt;br&gt;данный образ относится" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;strokeColor=default;fillColor=default;" parent="1" vertex="1">
+                    <mxGeometry x="246.5" y="560" width="254" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="zMBQPZwOg3jAW1KsyyCJ-12" value="конец" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="328.5" y="670" width="90" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="zMBQPZwOg3jAW1KsyyCJ-31" value="3) Максимум правдоподобия" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="200" width="120" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
