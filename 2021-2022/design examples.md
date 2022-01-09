@@ -17,6 +17,10 @@ $\omega$
 
 $\infty$
 
+$\neq$ $\geq$ $\leq$ 
+
+
+
 $\prod\limits_{i=1}^{n}$
 $\sum\limits_{i=1}^{n}$  
 
@@ -24,3 +28,12 @@ $\prod_{i=1}^{n}$
 $\sum_{i=1}^{n}$  
 
 $\overline{1,M}$
+
+$$
+\left\{
+\begin{array}{l}
+\frac12\omega^T\omega \rightarrow min,\\
+d^{(i)}(x^{(i)T}\omega -b_0) \geq 1, i=\overline{1,N}
+\end{array}
+\right.
+$$ 
