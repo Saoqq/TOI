@@ -13,11 +13,14 @@
 
 # Символы tex
 $\approx$  
+$\rightarrow$   
 $\omega$  
 
 $\infty$
 
-$\neq$ $\geq$ $\leq$ 
+$\neq$ $\geq$ $\leq$
+
+$\frac{4}{7}$
 
 
 
