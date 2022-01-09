@@ -49,3 +49,14 @@ $
 \end{array}
 d^{(i)}(x^{(i)T}\omega-b_0)=1
 $.
+
+$\omega_i: 
+g''_{ij}
+\def\arraystretch{0.6}
+\begin{array}{c} 
+\small w_i\\ 
+{>}\\
+<\\
+\small w_j
+\end{array}
+l'_{0ij}$
