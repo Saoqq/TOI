@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="B98Myi7qIVIVGV0O9Yf8" name="Page-1">
-        <mxGraphModel dx="952" dy="564" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="1" shadow="0">
+        <mxGraphModel dx="913" dy="564" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="1" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -24,8 +24,8 @@
                 <mxCell id="huDF47PdF3qLj8TZO268-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="huDF47PdF3qLj8TZO268-10" target="huDF47PdF3qLj8TZO268-12" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="huDF47PdF3qLj8TZO268-10" value="Задать разделяющую функцию в виде&lt;br&gt;\( g'_i(x) = -\frac{1}{2} ln(c_i) - \frac{1}{2} (x-m_i)^T C_i^{-1} (x-m_i) + ln(p(\omega_i)) \)&amp;nbsp;&lt;br&gt;\( i = \overline{1,n} \)&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="190" y="230" width="380" height="90" as="geometry"/>
+                <mxCell id="huDF47PdF3qLj8TZO268-10" value="Задать разделяющую функцию в виде&lt;br&gt;\( g'_i(x) = -\frac{1}{2} ln(C_i) - \frac{1}{2} (x-m_i)^T C_i^{-1} (x-m_i) + ln(p(\omega_i)) \)&amp;nbsp;&lt;br&gt;\( i = \overline{1,n} \)&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="191.52" y="230" width="380" height="90" as="geometry"/>
                 </mxCell>
                 <mxCell id="huDF47PdF3qLj8TZO268-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="huDF47PdF3qLj8TZO268-8" target="huDF47PdF3qLj8TZO268-10" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
@@ -34,22 +34,19 @@
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="huDF47PdF3qLj8TZO268-12" value="найти класс, которому соответствует максимальное значение разделяющей функции для данного образа&lt;br&gt;\( \omega_i : g'_i (x) \geq g'_j (x) \), \( j= \overline{1,m} , i \neq j \)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="190" y="360" width="380" height="80" as="geometry"/>
+                    <mxGeometry x="191.52" y="360" width="380" height="80" as="geometry"/>
                 </mxCell>
                 <mxCell id="huDF47PdF3qLj8TZO268-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="huDF47PdF3qLj8TZO268-13" target="huDF47PdF3qLj8TZO268-16" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="huDF47PdF3qLj8TZO268-13" value="" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
-                    <mxGeometry x="190" y="480" width="370" height="70" as="geometry"/>
+                    <mxGeometry x="196.52" y="480" width="370" height="70" as="geometry"/>
                 </mxCell>
                 <mxCell id="huDF47PdF3qLj8TZO268-16" value="Конец" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="320" y="600" width="110" height="40" as="geometry"/>
+                    <mxGeometry x="326.52" y="600" width="110" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="huDF47PdF3qLj8TZO268-18" value="&lt;span style=&quot;color: rgb(0 , 0 , 0) ; font-family: &amp;#34;helvetica&amp;#34; ; font-size: 12px ; font-style: normal ; font-weight: 400 ; letter-spacing: normal ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; background-color: rgb(248 , 249 , 250) ; display: inline ; float: none&quot;&gt;найденный класс соответствует классу к которому относится данный образ&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
-                    <mxGeometry x="210" y="500" width="330" height="50" as="geometry"/>
-                </mxCell>
-                <mxCell id="2" style="edgeStyle=none;html=1;" parent="1" source="huDF47PdF3qLj8TZO268-10" target="huDF47PdF3qLj8TZO268-10" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
+                    <mxGeometry x="210" y="490" width="330" height="50" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
