@@ -6,7 +6,7 @@
 Ставим Visual Studio Code с некоторыми плагинами. 
 ## ![scheme](readme_1.png) 
 ### Основа - следующие плагины:
- + **Markdown All in One** - шоб рендерить .md файлы в VSCode
+ + **Markdown All in One** - шоб рендерить .md файлы в VSCode c Math (tex) вставками
     ![scheme](readme_2.png)
  + **Draw.Io Integration** - шоб открывать drawio файлы в VSCode
  + **vscode-pdf** - шоб открывать в VSCode .pdf файлы
