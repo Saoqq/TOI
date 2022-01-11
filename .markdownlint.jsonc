@@ -1,0 +1,4 @@
+{
+    "MD033": false, // disable inline html warning
+    "MD013": false  // disable max line length warning
+}
