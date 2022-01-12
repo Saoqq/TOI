@@ -16,6 +16,7 @@ $\approx$
 $\equiv$  
 $\rightarrow$   
 $\omega$  
+$\in$
 
 $\infty$
 
