@@ -3,17 +3,19 @@
 
 Мы делали следующим образом:
 
-Ставим Visual Studio Code с некоторыми плагинами. 
-## ![scheme](readme_1.png) 
-### Основа - следующие плагины:
- + **Markdown All in One** - шоб рендерить .md файлы в VSCode c Math (tex) вставками
+Ставим Visual Studio Code с некоторыми плагинами
+
+## ![scheme](readme_1.png)
+
+### Основа - следующие плагины
+
++ **Markdown All in One** - шоб рендерить .md файлы в VSCode c Math (tex) вставками
     ![scheme](readme_2.png)
- + **Draw.Io Integration** - шоб открывать drawio файлы в VSCode
- + **vscode-pdf** - шоб открывать в VSCode .pdf файлы
++ **Draw.Io Integration** - шоб открывать drawio файлы в VSCode
++ **vscode-pdf** - шоб открывать в VSCode .pdf файлы
 
+### Ситуативно - следующие плагины
 
-### Ситуативно - следующие плагины:
- + **GitLens** - много фич с гитом, мне нужно было смотреть кто сделал коммит определённой строчки
- + **markdownlint** - подсвечивает проблемные места при написании .md файла
- + **SVG Viewer** - Рендерить svg в VSCode
-
++ **GitLens** - много фич с гитом, мне нужно было смотреть кто сделал коммит определённой строчки
++ **markdownlint** - подсвечивает проблемные места при написании .md файла
++ **SVG Viewer** - Рендерить svg в VSCode
