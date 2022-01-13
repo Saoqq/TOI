@@ -1,0 +1,847 @@
+
+                    <span class="notifications" id="user-notifications"></span>
+                    <div role="main"><span id="maincontent"></span><h2>Лекция 3</h2><div class="navtop border-top py-3 clearfix navimages"><a title="Закрыть книгу" class="bookexit" href="https://edu.vsu.ru/course/view.php?id=3401#section-5"><i class="icon fa fa-arrow-up fa-fw " title="Закрыть книгу" aria-label="Закрыть книгу"></i></a></div><div class="box py-3 generalbox book_content"><h3>Общесистемные вопросы теории управления</h3><div class="no-overflow">
+
+<div class="Section1">
+
+<p class="MsoBodyTextIndent" style="line-height:125%"><b><span style="font-size:
+16.0pt;line-height:125%">Лекция №3. Байесовская теория принятия решения применительно
+к задаче распознавания образов</span></b></p>
+
+<p class="MsoBodyTextIndent" style="text-indent:5.0pt;line-height:125%"><b><span style="font-size:16.0pt;line-height:125%">&nbsp;</span></b></p>
+
+<p class="MsoBodyTextIndent" style="line-height:125%"><span style="font-size:
+16.0pt;line-height:125%">В рамках статистического подхода предполагается, что
+образы объектов &nbsp;в пространстве и используемых признаков представляются как
+реализации случайного вектора <sub><img width="115" height="28" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image001.gif"></sub>. </span></p>
+
+<p class="MsoBodyTextIndent" style="line-height:125%"><span style="font-size:
+16.0pt;line-height:125%">Каждое значение этого вектора <sub><img width="148" height="28" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image002.gif"></sub>&nbsp;представляет образ конкретного
+объекта. Любой образ может принадлежать одному из <sub><img width="24" height="19" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image003.gif"></sub>&nbsp;классов объектов, в совокупности составляющих
+конечное множество альтернативных статистических гипотез <sub><img width="137" height="29" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image004.gif"></sub>. </span></p>
+
+<p class="MsoBodyTextIndent" style="line-height:125%"><span style="font-size:
+16.0pt;line-height:125%">Количество классов и их исходные наименования
+считаются известными. </span></p>
+
+<p class="MsoBodyTextIndent" style="line-height:125%"><span style="font-size:
+16.0pt;line-height:125%">Задаются априорные вероятности появления объектов различных
+классов – априорные вероятности гипотез <sub><img width="244" height="29" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image005.gif"></sub>&nbsp;и статистически описания вектора признаков
+каждого класса <sub><img width="15" height="15" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image006.gif"></sub>&nbsp;в
+виде условных плотностей распределения вероятностей: <sub><img width="227" height="29" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image007.gif"></sub>, которые называются функциями
+правдоподобия классов. &nbsp;В соответствие с формулой Байеса такое статистическое
+описание классов эквивалентно заданию апостериорных вероятностей классов относительно
+полученных наблюдений <sub><img width="15" height="16" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image008.gif"></sub></span></p>
+
+<p class="MsoBodyTextIndent" style="line-height:125%"><span style="font-size:
+16.0pt;line-height:125%">&nbsp;</span></p>
+
+<p class="MsoBodyTextIndent" style="line-height:125%"><span style="font-size:
+16.0pt;line-height:125%"><sub><img width="275" height="51" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image009.gif"></sub><sub><img width="277" height="44" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image010.gif"></sub></span></p>
+
+<p class="MsoBodyTextIndent" style="line-height:125%"><span style="font-size:
+16.0pt;line-height:125%">&nbsp;</span></p>
+
+<p class="MsoBodyTextIndent" style="line-height:125%"><span style="font-size:
+16.0pt;line-height:125%">Решаемая задача состоит в том, чтобы для каждого
+образа <sub><img width="15" height="16" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image008.gif"></sub>&nbsp;выполнить
+действие – решение <sub><img width="40" height="23" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image011.gif"></sub>,
+относящие его к тому или иному классу. </span></p>
+
+<p class="MsoBodyTextIndent" style="line-height:125%"><span style="font-size:
+16.0pt;line-height:125%">Для любого <sub><img width="15" height="16" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image008.gif"></sub>&nbsp;подобные решения имеют конечное множество возможных
+значений <sub><img width="69" height="23" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image012.gif"></sub>, <sub><img width="135" height="29" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image013.gif"></sub>. Множеству <sub><img width="17" height="19" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image014.gif"></sub>&nbsp;соответствует разбиение
+пространства признаков на непересекающиеся области <sub><img width="91" height="29" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image015.gif"></sub>, <sub><img width="140" height="28" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image016.gif"></sub><sub><img width="75" height="44" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image017.gif"></sub>, определяемые уравнениями <sub><img width="75" height="25" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image018.gif"></sub>,<sub><img width="65" height="28" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image019.gif"></sub>. Области <sub><img width="88" height="29" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image020.gif"></sub>&nbsp;будем называть областями решений. </span></p>
+
+<p class="MsoBodyTextIndent" style="line-height:125%"><span style="font-size:
+16.0pt;line-height:125%">С учетом введенных обозначений каждое фактическое действие
+<sub><img width="21" height="25" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image021.gif"></sub>, как значение функции
+<sub><img width="40" height="23" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image011.gif"></sub>, определяет, что
+при обработке информации тем или иным образом установлено, что <sub><img width="45" height="25" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image022.gif"></sub>. Обозначим это следующим
+образом:<sub><img width="176" height="25" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image023.gif"></sub>. </span></p>
+
+<p class="MsoBodyTextIndent" style="line-height:125%"><b><span style="font-size:
+16.0pt;line-height:125%">Синтез решающих правил на основе различных критериев</span></b></p>
+
+<p class="MsoBodyTextIndent" style="line-height:125%"><span style="font-size:
+16.0pt;line-height:125%">Рассмотрим методы, позволяющие оптимизировать процесс
+принятия подобных решений по определенным критериям, т.е. выполнить синтез
+алгоритма распознавания.</span></p>
+
+<p class="MsoBodyTextIndent" style="line-height:125%"><b><span style="font-size:
+16.0pt;line-height:125%">Критерий минимума условного риска.</span></b><span style="font-size:16.0pt;line-height:125%"> Выполнение любых действий практически
+всегда сопряжено с ошибками. В данном случае эти ошибки возникают в случае,
+когда при истинности любой гипотезы <sub><img width="23" height="28" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image024.gif"></sub>&nbsp;будет принято решение <sub><img width="21" height="25" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image021.gif"></sub>&nbsp;<sub><img width="43" height="23" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image025.gif"></sub>. Это ведет к определенным потерям, которые
+выражаются количественным образом. Требуется синтезировать классификатор –
+алгоритм принятия решений (решающее правило), которые минимизирует ожидаемые потери
+от выполнения своих действий. Согласно принятой терминологии ожидаемые потери
+называются риском <sub><img width="17" height="19" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image026.gif"></sub>.</span></p>
+
+<p class="MsoBodyTextIndent" style="line-height:125%"><span style="font-size:
+16.0pt;line-height:125%">В соответствии с байесовской теорией ожидаемые потери
+определяются на основе задания штрафных функций</span></p>
+
+<p class="MsoBodyTextIndent" align="center" style="text-align:center;line-height:
+125%"><span style="font-size:16.0pt;line-height:125%"><sub><img width="241" height="32" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image027.gif"></sub>,</span></p>
+
+<p class="MsoBodyTextIndent" align="left" style="text-align:left;text-indent:0cm;
+line-height:125%"><span style="font-size:16.0pt;line-height:125%">т.е. платы за
+принятие решения <sub><img width="21" height="25" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image021.gif"></sub>&nbsp;при
+истинности гипотез <sub><img width="23" height="28" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image024.gif"></sub>.
+Вводится функция условного риска </span></p>
+
+<p class="MsoBodyTextIndent" align="center" style="text-align:center;text-indent:
+0cm;line-height:125%"><span style="font-size:16.0pt;line-height:125%"><sub><img width="297" height="47" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image028.gif"></sub>,</span></p>
+
+<p class="MsoBodyTextIndent" style="text-indent:0cm;line-height:125%"><span style="font-size:16.0pt;line-height:125%">которые определяют суммарные потери
+за принятие решения <sub><img width="21" height="25" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image021.gif"></sub>&nbsp;при
+получении данных <sub><img width="15" height="16" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image008.gif"></sub>.
+Тогда общий ожидаемый риск можно представить как математическое ожидание
+условного риска относительно распределения всех возможных значений СВ <sub><img width="15" height="15" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image006.gif"></sub></span></p>
+
+<p class="MsoNormal" align="center" style="text-align:center;line-height:125%"><span style="font-size:16.0pt;line-height:125%"><sub><img width="545" height="48" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image029.gif"></sub>&nbsp;(1)</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:42.55pt;line-height:
+125%"><span style="font-size:16.0pt;line-height:125%">Поскольку общий риск определяется
+как интеграл от взвешенного неотрицательной функцией <sub><img width="40" height="23" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image030.gif"></sub>&nbsp;условного риска, то из (1)
+следует, что для того, чтобы минимизировать ожидаемые потери нужно каждый раз
+при получении на вход классификатора конкретного значения <sub><img width="15" height="15" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image006.gif"></sub>&nbsp;минимизировать условный риск. Другими
+словами, если для каждого <sub><img width="15" height="16" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image008.gif"></sub>&nbsp;решение <sub><img width="40" height="23" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image011.gif"></sub>&nbsp;выбрано таким образом, что&nbsp; величина <sub><img width="81" height="23" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image031.gif"></sub>является минимальной из
+всех возможных, то и величина общего риска будет минимальной, т.е. для <sub><img width="36" height="20" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image032.gif"></sub>&nbsp;должно выполняться</span></p>
+
+<p class="MsoNormal" align="center" style="text-align:center;text-indent:42.55pt;
+line-height:125%"><span style="font-size:16.0pt;line-height:125%"><sub><img width="368" height="25" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image033.gif"></sub>.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:42.55pt;line-height:
+125%"><span style="font-size:16.0pt;line-height:125%">В итоге, можно
+сформулировать следующее правило принятия решения в ходе распознавания: выбор в
+пользу гипотезы <sub><img width="28" height="25" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image034.gif"></sub>для
+полученного образа <sub><img width="15" height="16" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image008.gif"></sub>&nbsp;осуществляется,
+если</span></p>
+
+<p class="MsoNormal" align="right" style="text-align:right;line-height:125%"><span style="font-size:16.0pt;line-height:125%"><sub><img width="308" height="32" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image035.gif"></sub>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (2)</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:35.45pt;line-height:
+125%"><span style="font-size:16.0pt;line-height:125%">Полученное решающее
+правило называется правилом минимума условного риска (МУР).</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:35.45pt;line-height:
+125%"><span style="font-size:16.0pt;line-height:125%">Рассмотри его реализацию
+для ситуации двух классов. В этом случае </span></p>
+
+<p class="MsoNormal" align="center" style="text-align:center;line-height:125%"><span style="font-size:16.0pt;line-height:125%"><sub><img width="272" height="25" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image036.gif"></sub>,</span></p>
+
+<p class="MsoNormal" align="center" style="text-align:center;line-height:125%"><span style="font-size:16.0pt;line-height:125%"><sub><img width="276" height="25" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image037.gif"></sub>.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:35.45pt;line-height:
+125%"><span style="font-size:16.0pt;line-height:125%">Тогда при поступлении
+образа <sub><img width="15" height="16" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image008.gif"></sub>&nbsp;осуществляется
+выбор класса <sub><img width="21" height="25" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image038.gif"></sub>,
+если <sub><img width="140" height="25" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image039.gif"></sub>, или
+класса <sub><img width="23" height="25" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image040.gif"></sub>, если <sub><img width="140" height="25" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image041.gif"></sub>. Используя
+представленные соотношения&nbsp; и, объединяя эти неравенства в общее выражение, получим</span></p>
+
+<p class="MsoNormal" align="center" style="margin-left:7.1pt;text-align:center;
+text-indent:-7.1pt;line-height:125%"><span style="font-size:16.0pt;line-height:
+125%"><sub><img width="324" height="73" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image042.gif"></sub></span></p>
+
+<p class="MsoNormal" style="margin-left:7.1pt;text-indent:-7.1pt;line-height:
+125%"><span style="font-size:16.0pt;line-height:125%">или</span></p>
+
+<p class="MsoNormal" align="center" style="text-align:center;text-indent:42.55pt;
+line-height:125%"><span style="font-size:16.0pt;line-height:125%"><sub><img width="400" height="73" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image043.gif"></sub></span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:42.55pt;line-height:
+125%"><span style="font-size:16.0pt;line-height:125%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:35.45pt;line-height:
+125%"><span style="font-size:16.0pt;line-height:125%">Обычно потери в случае
+ошибки больше, чем при правильном распознавании и<sub><img width="193" height="25" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image044.gif"></sub>. Тогда, сокращая общий сомножитель,
+неравенства окончательно удобно представить в виде </span></p>
+
+<p class="MsoNormal" align="right" style="text-align:right;text-indent:42.55pt;
+line-height:125%"><span style="font-size:16.0pt;line-height:125%"><sub><img width="296" height="73" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image045.gif"></sub>.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(3)</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:42.55pt;line-height:
+125%"><span style="font-size:16.0pt;line-height:125%">Величина <sub><img width="35" height="23" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image046.gif"></sub>называется отношением
+правдоподобия. Как следует из (3), алгоритм принятия решения сводится к
+сравнению отношения правдоподобия <sub><img width="35" height="23" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image046.gif"></sub>&nbsp;с порогом <sub><img width="16" height="25" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image047.gif"></sub>, который зависит от штрафных функций и
+априорных вероятностей гипотез, определяющих априорные сведения о появлении
+классов образов. Очевидно, что области решений в пространстве признаков
+определяются в этом случае как </span></p>
+
+<p class="MsoNormal" align="center" style="text-align:center;line-height:125%"><span style="font-size:16.0pt;line-height:125%"><sub><img width="156" height="25" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image048.gif"></sub>,&nbsp;&nbsp;&nbsp; <sub><img width="159" height="25" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image049.gif"></sub>, </span></p>
+
+<p class="MsoNormal" style="line-height:125%"><span style="font-size:16.0pt;
+line-height:125%">а разделяющая граница между ними – уравнением <sub><img width="68" height="25" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image050.gif"></sub>.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:42.55pt;line-height:
+125%"><b><span style="font-size:16.0pt;line-height:125%">Критерий максимума
+апостериорной вероятности и максимального правдоподобия. </span></b><span style="font-size:16.0pt;line-height:125%">Важным частным случаем являются использование
+симметричных штрафных функций с нулевой платой за правильное решение</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:42.55pt;line-height:
+125%"><span style="font-size:16.0pt;line-height:125%">&nbsp;</span></p>
+
+<p class="MsoNormal" align="center" style="text-align:center;line-height:125%"><span style="font-size:16.0pt;line-height:125%"><sub><img width="341" height="55" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image051.gif"></sub>.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:35.45pt;line-height:
+125%"><span style="font-size:16.0pt;line-height:125%">Использование штрафных
+функция такого вида фактически означает, что отсутствуют обоснованные
+рекомендации относительно того, как различающие ошибочные решения могут
+повлиять на ожидаемые потери. Поэтом влияние всех ошибочных решений признается
+одинаковым, а плата за правильное решение приравнивается нулю.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:35.45pt;line-height:
+125%"><span style="font-size:16.0pt;line-height:125%">В этом случае выражение
+для условного риска преобразуется следующим образом:</span></p>
+
+<p class="MsoNormal" align="center" style="text-align:center;line-height:125%"><span style="font-size:16.0pt;line-height:125%"><sub><img width="349" height="57" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image052.gif"></sub></span><span lang="EN-US" style="font-size:
+16.0pt;line-height:125%">.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:35.45pt;line-height:
+125%"><span style="font-size:16.0pt;line-height:125%">Отсюда следует, что
+принятие решения в соответствии с критерием минимума условного риска&nbsp; в данном
+случае эквивалентно принятию решению в соответствие с максимумом апостериорной
+вероятности гипотезы о появлении объекта одного из классов. Байесовское решающее
+правило при этом в случае многих классов случае будет иметь вид системы
+неравенств для апостериорных вероятностей гипотез</span></p>
+
+<p class="MsoNormal" align="right" style="text-align:right;line-height:125%"><span style="font-size:16.0pt;line-height:125%"><sub><img width="317" height="32" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image053.gif"></sub>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(4а)</span></p>
+
+<p class="MsoNormal" style="line-height:125%"><span style="font-size:16.0pt;
+line-height:125%">или в виде системы неравенств для отношений правдоподобия</span></p>
+
+<p class="MsoNormal" align="right" style="text-align:right;line-height:125%"><span style="font-size:16.0pt;line-height:125%"><sub><img width="393" height="73" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image054.gif"></sub>.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (4б)</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:35.45pt;line-height:
+125%"><span style="font-size:16.0pt;line-height:125%">При проверке гипотез в
+случае двух классов алгоритм преобразуется следующим образом:</span></p>
+
+<p class="MsoNormal" align="right" style="text-align:right;line-height:125%"><span style="font-size:16.0pt;line-height:125%"><sub><img width="217" height="73" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image055.gif"></sub>.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (5)</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:35.45pt;line-height:
+125%"><span style="font-size:16.0pt;line-height:125%">Полученные решающие
+правила будем называть алгоритмами, реализующими критерий максимума
+апостериорной вероятности (МАВ), или просто алгоритмами МАВ. Их особенностью
+фактически является отказ от обоснования штрафных функций и использование при
+вычислении порога принятия решения только априорных вероятностей гипотез.
+Другими словами объем исходной информации, требуемой для синтеза алгоритма
+распознавания здесь существенно меньше. </span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:35.45pt;line-height:
+125%"><span style="font-size:16.0pt;line-height:125%">Еще один важный частный
+случай возникает в ситуации, когда, в дополнение к отсутствию обоснованных штрафных
+функций, априорные вероятности классов одинаковы <sub><img width="165" height="29" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image056.gif"></sub>&nbsp;&nbsp;или их значения просто неизвестны. В этом
+случае полученные решающие правила (5.5) естественным образом преобразуются к
+виду</span></p>
+
+<p class="MsoNormal" align="right" style="text-align:right;line-height:125%"><span style="font-size:16.0pt;line-height:125%"><sub><img width="317" height="32" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image057.gif"></sub>,&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(6а) </span></p>
+
+<p class="MsoNormal" style="line-height:125%"><span style="font-size:16.0pt;
+line-height:125%">или к виду</span></p>
+
+<p class="MsoNormal" align="right" style="text-align:right;line-height:125%"><span style="font-size:16.0pt;line-height:125%"><sub><img width="349" height="73" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image058.gif"></sub>.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (6б)</span></p>
+
+<p class="MsoNormal" style="text-indent:35.45pt;line-height:125%"><span style="font-size:16.0pt;line-height:125%">При распознавании двух классов &nbsp;решающее
+правило выглядит следующим образом:</span></p>
+
+<p class="MsoNormal" align="center" style="text-align:center;line-height:125%"><span style="font-size:16.0pt;line-height:125%"><sub><img width="177" height="73" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image059.gif"></sub>.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:35.45pt;line-height:
+125%"><span style="font-size:16.0pt;line-height:125%">Данные алгоритмы реализуют
+критерий максимума правдоподобия (МП). Далее будем их также называть алгоритмами
+МП. При их использовании реализуется минимальный уровень исходной информации,
+необходимой для синтеза алгоритма распознавания.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:35.45pt;line-height:
+125%"><b><span style="font-size:16.0pt;line-height:125%">Обобщенная структура
+решающего правила. Понятие разделяющей функции. </span></b><span style="font-size:16.0pt;line-height:125%">Исходя из результатов проведенного
+выше синтеза алгоритмов, можно предложить обобщенную структуру байесовсого
+классификатора, определяющую каноническую форму представления с использованием
+так называемых разделяющих функций. В качестве разделяющих функций будем рассматривать
+набор функций <sub><img width="105" height="29" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image060.gif"></sub>,
+на основе которых может быть определено соответствие вектора признаков одному
+из классов по правилу </span></p>
+
+<p class="MsoNormal" align="center" style="margin-left:7.1pt;text-align:center;
+text-indent:-7.1pt;line-height:125%"><span style="font-size:16.0pt;line-height:
+125%"><sub><img width="268" height="32" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image061.gif"></sub>,</span></p>
+
+<p class="MsoNormal" style="text-align:justify;line-height:125%"><span style="font-size:16.0pt;line-height:125%">т.е. отнесение образа объекта к тому
+или иному классу осуществляются на основе выбора максимума среди
+соответствующих значений разделяющих функций. В соответствии с этим обобщенная
+структура решающего правила может быть представлена в виде, показанном на рис.1.</span></p>
+
+<p class="MsoNormal" align="center" style="text-align:center;line-height:125%"><span style="position:absolute;z-index:3;left:0px;margin-left:129px;margin-top:63px;
+width:104px;height:163px"><img width="104" height="163" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image062.gif"></span><span style="position:absolute;z-index:2;left:0px;margin-left:129px;margin-top:63px;
+width:103px;height:40px"><img width="103" height="40" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image063.gif"></span><span style="position:absolute;z-index:5;left:0px;margin-left:96px;margin-top:19px;
+width:473px;height:228px"><img width="473" height="228" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image064.gif"></span><span style="position:absolute;z-index:4;left:0px;margin-left:129px;margin-top:34px;
+width:103px;height:31px"><img width="103" height="31" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image065.gif"></span><span style="position:absolute;z-index:1;left:0px;margin-left:252px;margin-top:162px;
+width:3px;height:87px"><img width="3" height="87" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image066.gif"></span><span style="font-size:16.0pt;line-height:125%"><img width="547" height="256" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image067.gif"></span></p>
+
+<p class="MsoNormal" align="center" style="text-align:center;line-height:125%"><span style="font-size:16.0pt;line-height:125%">Рис.1. Обобщенная структура решающего
+правила</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:42.55pt;line-height:
+125%"><span style="font-size:16.0pt;line-height:125%">В этой схеме отображается
+общая сущность ранее рассмотренных решающих правил, используемых в процессе
+распознавания. Решение в любом из них в итоге формируется как индекс класса, у
+которого значение разделяющей функции максимально. Для рассмотренных ранее трех
+вариантов алгоритмов разделяющие функции можно определить следующим образом:</span></p>
+
+<p class="MsoNormal" align="center" style="text-align:center;line-height:125%"><span style="font-size:16.0pt;line-height:125%"><sub><img width="349" height="84" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image068.gif"></sub></span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:42.55pt;line-height:
+125%"><span style="font-size:16.0pt;line-height:125%">Очевидно, что, если <sub><img width="107" height="29" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image069.gif"></sub>&nbsp;являются разделяющими
+функциями, то любая монотонно возрастающая функция<sub><img width="115" height="21" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image070.gif"></sub> от них позволяет получить
+эквивалентное решающее правило для системы новых функций <sub><img width="107" height="29" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image071.gif"></sub>. </span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:42.55pt;line-height:
+125%"><span style="font-size:16.0pt;line-height:125%">Особенно удобно в таких случаях
+использовать преобразование на основе натурального логарифма <sub><img width="192" height="29" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image072.gif"></sub>, поскольку при этом
+произведения и степени преобразуются в суммы, что может существенно упростить
+математический анализ и процесс вычислений.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:42.55pt;line-height:
+125%"><span style="font-size:16.0pt;line-height:125%">В частном случае распознавания
+двух классов с использованием разделяющих функций реализуется следующее
+обобщенное решающее правило:</span></p>
+
+<p class="MsoNormal" align="center" style="text-align:center;text-indent:42.55pt;
+line-height:125%"><span style="font-size:16.0pt;line-height:125%"><sub><img width="107" height="73" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image073.gif"></sub>,</span></p>
+
+<p class="MsoNormal" style="line-height:125%"><span style="font-size:16.0pt;
+line-height:125%">что эквивалентно </span></p>
+
+<p class="MsoNormal" align="center" style="text-align:center;line-height:125%"><span style="font-size:16.0pt;line-height:125%"><sub><img width="185" height="73" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image074.gif"></sub>.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:35.45pt;line-height:
+125%"><span style="font-size:16.0pt;line-height:125%">Это означает, что классификатор
+двух классов удобно представить как алгоритм, вычисляющий единственную
+разделяющую функции. Отметим, что в случае двух классов уравнение&nbsp; <sub><img width="132" height="25" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image075.gif"></sub>&nbsp;определяет границу между
+областями решений <sub><img width="49" height="25" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image076.gif"></sub>.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:35.45pt;line-height:
+125%"><span style="font-size:16.0pt;line-height:125%">При использовании,
+например, критерия МАВ, разделяющую функцию можно представить виде</span></p>
+
+<p class="MsoNormal" align="center" style="text-align:center;line-height:125%"><span style="font-size:16.0pt;line-height:125%"><sub><img width="205" height="25" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image077.gif"></sub></span></p>
+
+<p class="MsoNormal" style="line-height:125%"><span style="font-size:16.0pt;
+line-height:125%">или в эквивалентном виде</span></p>
+
+<p class="MsoNormal" align="center" style="text-align:center;line-height:125%"><span style="font-size:16.0pt;line-height:125%"><sub><img width="429" height="52" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image078.gif"></sub>.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:35.45pt;line-height:
+125%"><span style="font-size:16.0pt;line-height:125%">Следует только отметить,
+что при выполнении логарифмического преобразования для общей формы
+классификатора</span></p>
+
+<p class="MsoNormal" align="center" style="text-align:center;line-height:125%"><span style="font-size:16.0pt;line-height:125%"><sub><img width="167" height="73" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image079.gif"></sub>&nbsp;,</span></p>
+
+<p class="MsoNormal" style="text-align:justify;line-height:125%"><span style="font-size:16.0pt;line-height:125%">где <sub><img width="16" height="25" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image047.gif"></sub>&nbsp;– порог, задаваемый определенным образом для
+каждого из алгоритмов МУР, МАВ, МП, соответствующее логарифмирование выполняется
+и для порога. Т.е. общий вид алгоритма классификации двух гипотез&nbsp; будет иметь
+вид</span></p>
+
+<p class="MsoNormal" align="center" style="text-align:center;line-height:125%"><span style="font-size:16.0pt;line-height:125%"><sub><img width="272" height="73" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image080.gif"></sub>.&nbsp;&nbsp; <sub><img width="117" height="25" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image081.gif"></sub>, <sub><img width="64" height="25" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image082.gif"></sub>.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:35.45pt;line-height:
+125%"><span style="font-size:16.0pt;line-height:125%">Далее мы увидим, как
+простой прием логарифмирования позволяет существенно упростить решения задачи
+синтеза и анализа классификатора.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:35.45pt;line-height:
+125%"><b><span style="font-size:16.0pt;line-height:125%">Анализ решающих
+правил. Расчет вероятностей ошибок распознавания</span></b></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:35.45pt;line-height:
+125%"><span style="font-size:16.0pt;line-height:125%">Важнейшим этапом
+разработки алгоритмов распознавания, как и любых алгоритмов обработки
+информации, является этап анализа ранее синтезированного алгоритма. Несмотря на
+то, что алгоритмы, синтезированные на основе введенных критериев, являются оптимальными
+и улучшить их работу в рамках исходной модели нельзя, их анализ с точки зрения
+ожидаемых потерь и ошибок позволяет разработчику сформировать предметные практические
+рекомендации. Эти рекомендации могут касаться возможности использования
+полученного алгоритма в принципе, необходимости расширения перечня используемых
+признаков, повышения точности их измерения, использования новых физических датчиков
+и т.п. </span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:35.45pt;line-height:
+125%"><span style="font-size:16.0pt;line-height:125%">Кроме того, в ходе
+анализа синтезированных алгоритмов важной задачей являются анализ вида
+разделяющих функций (линейные, нелинейные) и формы областей принятия решений <sub><img width="99" height="32" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image083.gif"></sub>, что зачастую позволяет
+сформировать конструктивные рекомендации относительно возможных упрощений
+алгоритмов. </span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:35.45pt;line-height:
+125%"><span style="font-size:16.0pt;line-height:125%">Базовыми показателями
+являются вероятности правильного распознавания объектов данного класса <sub><img width="87" height="27" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image084.gif"></sub>&nbsp;и вероятности ошибки при
+распознавании объектов данного класса <sub><img width="83" height="27" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image085.gif"></sub>, которые определяются соотношениями</span></p>
+
+<p class="MsoNormal" align="center" style="text-align:center;line-height:125%"><span style="font-size:16.0pt;line-height:125%"><sub><img width="365" height="41" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image086.gif"></sub>,&nbsp;&nbsp; <sub><img width="65" height="28" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image019.gif"></sub>,</span></p>
+
+<p class="MsoNormal" style="line-height:125%"><span style="font-size:16.0pt;
+line-height:125%">а также&nbsp; общая &nbsp;суммарная ошибка распознавания, усредненная
+по априорным вероятностям классов </span></p>
+
+<p class="MsoNormal" align="center" style="text-align:center;line-height:125%"><span style="font-size:16.0pt;line-height:125%"><sub><img width="255" height="44" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image087.gif"></sub></span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:35.45pt;line-height:
+125%"><span style="font-size:16.0pt;line-height:125%">Кроме того, используется
+такая характеристика как матрица ошибок распознавания классов, в которой
+недиагональные элементы составляют вероятности перепутывания классов, а на
+главной диагонали находятся вероятности правильного распознавания классов,</span></p>
+
+<p class="MsoNormal" align="center" style="text-align:center;line-height:125%"><span style="font-size:16.0pt;line-height:125%"><sub><img width="80" height="33" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image088.gif"></sub>, <sub><img width="13" height="25" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image089.gif"></sub><sub><img width="133" height="39" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image090.gif"></sub>,&nbsp; <sub><img width="79" height="57" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image091.gif"></sub>,&nbsp; <sub><img width="144" height="57" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image092.gif"></sub></span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:35.45pt;line-height:
+125%"><span style="font-size:16.0pt;line-height:125%">При распознавании двух
+классов вероятности ошибок часто разделяют на ошибку первого рода и ошибку
+второго рода. Они определяются как </span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:35.45pt;line-height:
+125%"><span style="font-size:16.0pt;line-height:125%">&nbsp;</span></p>
+
+<p class="MsoNormal" align="center" style="text-align:center;line-height:125%"><span style="font-size:16.0pt;line-height:125%"><sub><img width="129" height="39" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image093.gif"></sub>,&nbsp;&nbsp; <sub><img width="128" height="39" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image094.gif"></sub></span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:35.45pt;line-height:
+125%"><span style="font-size:16.0pt;line-height:125%">В приведенных ниже
+рисунках приводятся примеры двух вариантов разделяющих функций для МАВ в виде <sub><img width="111" height="25" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image095.gif"></sub>&nbsp;и в виде функций
+апостериорных вероятностей гипотез <sub><img width="68" height="25" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image096.gif"></sub>&nbsp;относительно <sub><img width="15" height="16" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image008.gif"></sub>, а также областей принятия решений,
+выделенных вертикальными линиями. Рассматривается случай распознавания классов
+образов с различными априорными вероятностями. Кроме того, проводится визуализация
+ошибок перепутывания двух классов <sub><img width="20" height="28" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image097.gif"></sub>, которые определяются площадью закрашенных
+областей под кривыми функций правдоподобия классов. </span></p>
+
+<p class="MsoNormal" style="line-height:125%;text-autospace:none"><img width="322" height="241" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image098.jpg" align="left" hspace="12"><span style="font-size:16.0pt;line-height:125%"><img width="321" height="241" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image099.jpg"></span></p>
+
+<p class="MsoNormal" align="center" style="text-align:center;line-height:125%;
+text-autospace:none"><span style="font-size:16.0pt;line-height:125%">а)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+б)</span></p>
+
+<p class="MsoNormal" style="line-height:125%;text-autospace:none"><span style="font-size:16.0pt;line-height:125%">&nbsp;</span></p>
+
+<p class="MsoNormal" align="center" style="text-align:center;line-height:125%"><span style="font-size:16.0pt;line-height:125%"><img width="328" height="246" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image100.jpg"></span></p>
+
+<p class="MsoNormal" align="center" style="text-align:center;text-indent:35.45pt;
+line-height:125%"><span style="font-size:16.0pt;line-height:125%">в)</span></p>
+
+<p class="MsoNormal" align="center" style="text-align:center;line-height:125%"><span style="font-size:16.0pt;line-height:125%">Рис.2. Разделяющие функции (а),
+апостериорные вероятности (б) для случая трех классов, а также вероятности
+ошибок перепутывания первого и третьего&nbsp; классов (в)</span></p>
+
+<p class="MsoNormal" align="center" style="text-align:center;text-indent:35.45pt;
+line-height:125%"><span style="font-size:16.0pt;line-height:125%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:35.45pt;line-height:
+125%"><span style="font-size:16.0pt;line-height:125%">Мы видим, что различные формы
+задания разделяющей функции в данном случае дают одинаковый результат с точки
+зрения локализации областей принятия решений, выделенных вертикальными линиями.
+Для вероятностей перепутывания первого и третьего классов (рис.2,в) промежуточная
+не закрашенная область соответствует центральной подобласти решения второго
+класса, которая в целом состоит из трех подобластей, размещенных слева, по
+центру и справа на оси OX. </span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:35.45pt;line-height:
+125%"><span style="font-size:16.0pt;line-height:125%">Для случая двух классов пример
+получения аналогичных графиков, представлен на рис.3. Закрашенные области здесь
+отображают вероятности ошибок первого и второго рода.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:35.45pt;line-height:
+125%"><span style="font-size:16.0pt;line-height:125%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="text-align:justify;line-height:125%"><img width="315" height="236" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image101.jpg" align="left" hspace="12"><span style="font-size:16.0pt;line-height:125%"><img width="314" height="236" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image102.jpg">&nbsp; </span></p>
+
+<p class="MsoNormal" align="center" style="text-align:center;text-indent:35.45pt;
+line-height:125%"><span style="font-size:16.0pt;line-height:125%">&nbsp;</span></p>
+
+<p class="MsoNormal" align="center" style="text-align:center;line-height:125%;
+text-autospace:none"><span style="font-size:16.0pt;line-height:125%">а)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+б)</span></p>
+
+<p class="MsoNormal" align="center" style="text-align:center;line-height:125%"><span style="font-size:16.0pt;line-height:125%"><img width="321" height="241" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image103.jpg"></span></p>
+
+<p class="MsoNormal" align="center" style="text-align:center;text-indent:35.45pt;
+line-height:125%"><span style="font-size:16.0pt;line-height:125%">&nbsp;</span></p>
+
+<p class="MsoNormal" align="center" style="text-align:center;text-indent:35.45pt;
+line-height:125%"><span style="font-size:16.0pt;line-height:125%">в)</span></p>
+
+<p class="MsoNormal" align="center" style="text-align:center;line-height:125%"><span style="font-size:16.0pt;line-height:125%">Рис.3. Разделяющие функции (а),
+апостериорные вероятности (б) для случая двух классов, а также вероятности
+ошибок первого и второго рода (в)</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:35.45pt;line-height:
+125%"><span style="font-size:16.0pt;line-height:125%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:35.45pt;line-height:
+125%"><span style="font-size:16.0pt;line-height:125%">При анализе эффективности
+алгоритмов распознавания на основе минимума условного риска вероятности
+ошибочных решений при наличии штрафных функций легко пересчитываются в
+ожидаемые потери. Для этого преобразуем выражение для общего риска следующим
+образом:</span></p>
+
+<p class="MsoNormal" align="center" style="text-align:center;line-height:125%"><span style="font-size:16.0pt;line-height:125%">&nbsp;</span></p>
+
+<p class="MsoNormal" align="center" style="text-align:center;line-height:125%"><span style="font-size:16.0pt;line-height:125%"><sub><img width="477" height="48" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image104.gif"></sub>.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:35.45pt;line-height:
+125%"><span style="font-size:16.0pt;line-height:125%">Подставим в выражение для
+общего риска симметричную функцию потерь. В этом случае общий риск
+преобразуется к виду</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:35.45pt;line-height:
+125%"><span style="font-size:16.0pt;line-height:125%"><sub><img width="580" height="48" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image105.gif"></sub>.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:35.45pt;line-height:
+125%"><span style="font-size:16.0pt;line-height:125%">Каждый интеграл под
+знаком суммы определяет вероятность того, что <sub><img width="45" height="25" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image022.gif"></sub>, если анализируемый объект действительно
+принадлежит классу <sub><img width="21" height="25" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image106.gif"></sub>,
+т.е. вероятность правильного распознавания объектов этого класса <sub><img width="100" height="29" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image107.gif"></sub>. Соответственно всё
+выражение дает усредненную по априорным вероятностям классов суммарную вероятность
+ошибки распознавания <sub><img width="23" height="25" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image108.gif"></sub>.
+Таким образом, применение критерия МАВ обеспечивает минимизацию суммарной
+ошибки. Поэтому в литературе данный критерий еще называют критерием идеального
+наблюдателя.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:35.45pt;line-height:
+125%"><span style="font-size:16.0pt;line-height:125%">Определение
+представленных показателей может производится различными способами.&nbsp; </span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:35.45pt;line-height:
+125%"><b><span style="font-size:16.0pt;line-height:125%">Первый способ</span></b><span style="font-size:16.0pt;line-height:125%"> предполагает проведение прямого
+интегрирования исходных плотностей <sub><img width="71" height="28" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image109.gif"></sub>,<sub><img width="65" height="28" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image019.gif"></sub> на основе (5.11) или (5.13) по областям
+решений&nbsp; <sub><img width="99" height="32" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image083.gif"></sub>.
+Однако такое интегрирование для случая, когда размерность признакового
+пространства больше 1, весьма затруднительно.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:35.45pt;line-height:
+125%"><b><span style="font-size:16.0pt;line-height:125%">Второй способ</span></b><span style="font-size:16.0pt;line-height:125%"> предполагает проведение анализа одномерных
+распределений разделяющих функций с учетом вида этих функций <sub><img width="80" height="28" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image110.gif"></sub>,<sub><img width="65" height="28" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image019.gif"></sub>, а также использования приближений
+для построения этих распределений. Полученные распределения используются для расчета
+ошибок. Для случая двух классов при использовании слагаемого разделяющей
+функции <sub><img width="111" height="24" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image111.gif"></sub>,
+являющейся скалярной величиной логарифма отношения правдоподобия (ЛОП),
+вероятности ошибок определяются как одномерные интегралы вида </span></p>
+
+<p class="MsoNormal" align="center" style="text-align:center;text-indent:35.45pt;
+line-height:125%"><span style="font-size:16.0pt;line-height:125%"><sub><img width="156" height="59" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image112.gif"></sub>,&nbsp;&nbsp; <sub><img width="151" height="61" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image113.gif"></sub></span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:35.45pt;line-height:
+125%"><b><span style="font-size:16.0pt;line-height:125%">Третий способ</span></b><span style="font-size:16.0pt;line-height:125%"> аналитического расчета ошибок базируется
+на использовании принципа гарантированного результата, в основе которого лежит
+использование различного рода верхних границ для вероятностей ошибок. К ним
+относится граница Чернова, которая может быть рассчитана при распознавании двух
+классов как для каждого класса в отдельности, так и для суммарной ошибки в виде</span></p>
+
+<p class="MsoNormal" align="center" style="text-align:center;line-height:125%"><span style="font-size:16.0pt;line-height:125%"><sub><img width="380" height="28" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image114.gif"></sub>,</span></p>
+
+<p class="MsoNormal" align="center" style="text-align:center;line-height:125%"><span style="font-size:16.0pt;line-height:125%"><sub><img width="261" height="28" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image115.gif"></sub>.</span></p>
+
+<p class="MsoNormal" style="line-height:125%"><span style="font-size:16.0pt;
+line-height:125%">где <sub><img width="11" height="19" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image116.gif"></sub>–
+скалярная величина, лежащая в интервале от нуля до единицы. Оптимальное
+значение <sub><img width="11" height="19" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image116.gif"></sub>&nbsp;удовлетворяет
+уравнению</span></p>
+
+<p class="MsoNormal" align="center" style="text-align:center;line-height:125%"><span style="font-size:16.0pt;line-height:125%"><sub><img width="196" height="48" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image117.gif"></sub>.</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:1.0cm;line-height:
+125%"><span style="font-size:16.0pt;line-height:125%">Величина <sub><img width="51" height="25" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image118.gif"></sub>&nbsp;называется расстоянием
+Бхатачария. Его также используют для оценки степени разделимости двух
+распределений. </span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:1.0cm;line-height:
+125%"><span style="font-size:16.0pt;line-height:125%">Для случая многих классов
+с использованием границы Чернова может быть оценена верхняя граница&nbsp; <sub><img width="23" height="25" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image108.gif"></sub>&nbsp;&nbsp;в виде следующего неравенства:</span></p>
+
+<p class="MsoNormal" align="center" style="text-align:center;text-indent:1.0cm;
+line-height:125%"><span style="font-size:16.0pt;line-height:125%"><sub><img width="105" height="47" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image119.gif"></sub>,</span></p>
+
+<p class="MsoNormal" style="text-align:justify;line-height:125%"><span style="font-size:16.0pt;line-height:125%">где <sub><img width="32" height="28" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image120.gif"></sub>– верхние границы, оцениваемые для случая
+попарного распознавания классов.</span></p>
+
+<p class="MsoBodyTextIndent" style="line-height:125%"><span style="font-size:
+16.0pt;line-height:125%">Четвертый и, пожалуй, самым простой способ предполагает
+проведение &nbsp;оценки вероятностей ошибок путем прямого статистического
+имитационного моделирования алгоритма распознавания, в ходе которого&nbsp;
+проводится подсчет количества возникающих ошибок и усреднение результатов по
+числу <sub><img width="20" height="19" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image121.gif"></sub>&nbsp;выполненных
+реализаций моделирования. Подобный подход не требует использования сложных интегральных
+преобразований, но требует внимательного отношению к анализу уровня
+достоверности получаемых результатов статистического моделирования, особенно, в
+случаях, когда оцениваются весьма малые вероятности ошибок или близкие к
+единице вероятности правильного распознавания классов. </span></p>
+
+<p class="MsoBodyTextIndent" style="text-indent:42.55pt;line-height:125%"><span style="font-size:16.0pt;line-height:125%">Поэтому при оценке ошибок в ходе
+статистического моделирования используют метод доверительных интервалов.<b> </b>Требуется
+найти число испытаний, при котором</span></p>
+
+<p class="MsoBodyTextIndent" align="center" style="text-align:center;text-indent:
+0cm;line-height:125%"><span style="font-size:16.0pt;line-height:125%"><sub><img width="204" height="37" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image122.gif"></sub>,</span></p>
+
+<p class="MsoBodyTextIndent" style="text-indent:0cm;line-height:125%"><span style="font-size:16.0pt;line-height:125%">где <sub><img width="23" height="28" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image123.gif"></sub>&nbsp;– доверительный интервал; <sub><img width="13" height="19" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image124.gif"></sub>&nbsp;– уровень значимости. Конечное
+уравнение, &nbsp;связывающее <sub><img width="23" height="28" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image123.gif"></sub>&nbsp;и
+<sub><img width="20" height="19" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image121.gif"></sub>, имеет вид</span></p>
+
+<p class="MsoBodyTextIndent" align="center" style="text-align:center;text-indent:
+0cm;line-height:125%"><span style="font-size:16.0pt;line-height:125%"><sub><img width="212" height="33" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image125.gif"></sub>,&nbsp; <sub><img width="173" height="59" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image126.gif"></sub>,&nbsp; ,</span></p>
+
+<p class="MsoBodyTextIndent" align="center" style="text-align:center;text-indent:
+0cm;line-height:125%"><span style="font-size:16.0pt;line-height:125%"><sub><img width="156" height="31" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image127.gif"></sub>, <sub><img width="171" height="31" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image128.gif"></sub>,&nbsp;&nbsp;&nbsp; <sub><img width="157" height="57" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image129.gif"></sub></span></p>
+
+<p class="MsoBodyTextIndent" style="line-height:125%"><span style="font-size:
+16.0pt;line-height:125%">Для того, чтобы избавиться от неизвестного значения <sub><img width="31" height="28" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image130.gif"></sub>, можно заменить
+произведение<sub><img width="96" height="28" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image131.gif"></sub>на
+величину <sub><img width="181" height="35" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image132.gif"></sub>. Тогда
+окончательно получим выражение для гарантированных значений <sub><img width="23" height="28" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image123.gif"></sub>&nbsp;и <sub><img width="20" height="19" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image121.gif"></sub></span></p>
+
+<p class="MsoBodyTextIndent" align="center" style="text-align:center;text-indent:
+0cm;line-height:125%"><span style="font-size:16.0pt;line-height:125%"><sub><img width="85" height="52" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image133.gif"></sub>,&nbsp;&nbsp; <sub><img width="81" height="59" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image134.gif"></sub>.</span></p>
+
+<p class="MsoBodyTextIndent" style="text-indent:31.5pt;line-height:125%"><span style="font-size:16.0pt;line-height:125%">В приведенной ниже таблице
+представлены рекомендуемые объемы испытаний – значения <sub><img width="20" height="19" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image121.gif"></sub>, полученные для уровня значимости <sub><img width="57" height="21" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image135.gif"></sub>&nbsp;и доверительного интервала,
+выбираемого исходя из 25% и 10% - го значения доверительного интервала
+относительно оцениваемого уровня вероятности. Величина <sub><img width="97" height="28" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image136.gif"></sub>=1.96.</span></p>
+
+<p class="MsoBodyTextIndent" style="text-indent:31.5pt;line-height:125%"><span style="font-size:16.0pt;line-height:125%">Таблица 5.1. Рекомендуемые объемы
+статистических испытаний</span></p>
+
+<div align="center">
+
+<table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:none">
+ <tbody><tr style="height:40.0pt">
+  <td width="131" rowspan="2" valign="top" style="width:98.5pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:40.0pt">
+  <p class="MsoBodyTextIndent" align="center" style="text-align:center;text-indent:
+  0cm"><span style="font-size:16.0pt">Значения оцениваемой вероятности ошибки</span><span style="font-size:16.0pt"> </span><span style="font-size:16.0pt"><sub><img width="68" height="28" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image137.gif"></sub></span></p>
+  </td>
+  <td width="433" colspan="2" valign="top" style="width:325.1pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:40.0pt">
+  <p class="MsoBodyTextIndent" align="center" style="text-align:center;text-indent:
+  0cm;line-height:125%"><span style="font-size:16.0pt;line-height:125%">Количество
+  испытаний<sub><img width="20" height="19" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image121.gif"></sub> </span></p>
+  </td>
+ </tr>
+ <tr style="height:20.25pt">
+  <td width="207" valign="top" style="width:155.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:20.25pt">
+  <p class="MsoBodyTextIndent" align="center" style="text-align:center;text-indent:
+  0cm;line-height:125%"><span style="font-size:16.0pt;line-height:125%"><sub><img width="139" height="31" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image138.gif"></sub></span></p>
+  </td>
+  <td width="227" valign="top" style="width:6.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:20.25pt">
+  <p class="MsoBodyTextIndent" align="center" style="text-align:center;text-indent:
+  0cm;line-height:125%"><span style="font-size:16.0pt;line-height:125%"><sub><img width="129" height="31" src="https://edu.vsu.ru/pluginfile.php/947099/mod_book/chapter/15146/v3.files/image139.gif"></sub></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="131" valign="top" style="width:98.5pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoBodyTextIndent" align="center" style="text-align:center;text-indent:
+  0cm;line-height:125%"><span style="font-size:16.0pt;line-height:125%">0.1</span></p>
+  </td>
+  <td width="207" valign="top" style="width:155.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoBodyTextIndent" align="center" style="text-align:center;text-indent:
+  0cm;line-height:125%"><span style="font-size:16.0pt;line-height:125%">5.532e+02</span></p>
+  </td>
+  <td width="227" valign="top" style="width:6.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoBodyTextIndent" align="center" style="text-align:center;text-indent:
+  0cm;line-height:125%"><span style="font-size:16.0pt;line-height:125%">3.457e+03</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="131" valign="top" style="width:98.5pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoBodyTextIndent" align="center" style="text-align:center;text-indent:
+  0cm;line-height:125%"><span style="font-size:16.0pt;line-height:125%">0.01</span></p>
+  </td>
+  <td width="207" valign="top" style="width:155.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoBodyTextIndent" align="center" style="text-align:center;text-indent:
+  0cm;line-height:125%"><span style="font-size:16.0pt;line-height:125%">6.085e+03</span></p>
+  </td>
+  <td width="227" valign="top" style="width:6.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoBodyTextIndent" align="center" style="text-align:center;text-indent:
+  0cm;line-height:125%"><span style="font-size:16.0pt;line-height:125%">3.803e+04</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="131" valign="top" style="width:98.5pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoBodyTextIndent" align="center" style="text-align:center;text-indent:
+  0cm;line-height:125%"><span style="font-size:16.0pt;line-height:125%">0.001</span></p>
+  </td>
+  <td width="207" valign="top" style="width:155.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoBodyTextIndent" align="center" style="text-align:center;text-indent:
+  0cm;line-height:125%"><span style="font-size:16.0pt;line-height:125%">6.140e+04</span></p>
+  </td>
+  <td width="227" valign="top" style="width:6.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoBodyTextIndent" align="center" style="text-align:center;text-indent:
+  0cm;line-height:125%"><span style="font-size:16.0pt;line-height:125%">3.837e+05</span></p>
+  </td>
+ </tr>
+</tbody></table>
+
+</div>
+
+<p class="MsoBodyTextIndent" style="text-indent:31.5pt;line-height:125%"><span style="font-size:16.0pt;line-height:125%">&nbsp;</span></p>
+
+<p class="MsoBodyTextIndent" style="text-indent:31.5pt;line-height:125%"><span style="font-size:16.0pt;line-height:125%">Представленные данные свидетельствуют
+о том, что для оценки малых вероятностей ошибки или, что, эквивалентно, близких
+к единице вероятностей правильного распознавания, требуется использовать количество
+испытаний&nbsp; почти на два порядка превышающее величину, обратную оцениваемой
+малой вероятности ошибки.</span></p>
+
+</div>
+
+</div></div><div class="navbottom py-3 border-bottom clearfix navimages"><a title="Закрыть книгу" class="bookexit" href="https://edu.vsu.ru/course/view.php?id=3401#section-5"><i class="icon fa fa-arrow-up fa-fw " title="Закрыть книгу" aria-label="Закрыть книгу"></i></a></div></div>
+                    <div class="mt-5 mb-1 activity-navigation container-fluid">
+<div class="row">
+    <div class="col-md-4">        <div class="float-left">
+                <a href="https://edu.vsu.ru/mod/book/view.php?id=57930&amp;forceview=1" id="prev-activity-link" class="btn btn-link" title="Лекция 2">◄ Лекция 2</a>
+
+        </div>
+</div>
+    <div class="col-md-4">        <div class="mdl-align">
+            <div class="urlselect">
+    <form method="post" action="https://edu.vsu.ru/course/jumpto.php" class="form-inline" id="url_select_f61e07d352c8de41">
+        <input type="hidden" name="sesskey" value="SGxlcoIBzn">
+            <label for="jump-to-activity" class="sr-only">
+                Перейти на...
+            </label>
+        <select id="jump-to-activity" class="custom-select urlselect" name="jump">
+                    <option value="" selected="">Перейти на...</option>
+                    <option value="/mod/url/view.php?id=802704&amp;forceview=1">Ссылка на вход в лекцию</option>
+                    <option value="/mod/attendance/view.php?id=756904&amp;forceview=1">Общая посещаемость ТОИ</option>
+                    <option value="/mod/quiz/view.php?id=397565&amp;forceview=1">Экзамен первый вопрос</option>
+                    <option value="/mod/quiz/view.php?id=400858&amp;forceview=1">Экзамен второй вопрос</option>
+                    <option value="/mod/quiz/view.php?id=883978&amp;forceview=1">Экзамен третий вопрос</option>
+                    <option value="/mod/assign/view.php?id=885785&amp;forceview=1">Тексты программ 1 группа 14.01.22</option>
+                    <option value="/mod/bigbluebuttonbn/view.php?id=504386&amp;forceview=1">ТОИ пересдача лабораторных</option>
+                    <option value="/mod/bigbluebuttonbn/view.php?id=406372&amp;forceview=1">Консультация к экзамену</option>
+                    <option value="/mod/folder/view.php?id=414772&amp;forceview=1">Ведомости для информирования студентов о результатах экзаменов</option>
+                    <option value="/mod/forum/view.php?id=57928&amp;forceview=1">Объявления</option>
+                    <option value="/mod/page/view.php?id=57975&amp;forceview=1">Цели и задачи учебной дисциплины</option>
+                    <option value="/mod/page/view.php?id=57976&amp;forceview=1">Место учебной дисциплины в структуре ООП</option>
+                    <option value="/mod/page/view.php?id=57978&amp;forceview=1">Перечень компетенций с указанием этапов формирования и планируемых результатов обучения</option>
+                    <option value="/mod/page/view.php?id=57979&amp;forceview=1">Перечень основной и дополнительной литературы, ресурсов интернет, необходимых для освоения дисциплины </option>
+                    <option value="/mod/page/view.php?id=57980&amp;forceview=1">Перечень учебно-методического обеспечения для самостоятельной работы</option>
+                    <option value="/mod/page/view.php?id=57981&amp;forceview=1">Критерии оценивания компетенций и шкала оценок на экзамене</option>
+                    <option value="/mod/bigbluebuttonbn/view.php?id=202927&amp;forceview=1">Лекция по теме 1 (06.09-13.09)</option>
+                    <option value="/mod/resource/view.php?id=57932&amp;forceview=1">Материалы к лекции по теме 1</option>
+                    <option value="/mod/folder/view.php?id=205645&amp;forceview=1">Посещаемость 06.09.21</option>
+                    <option value="/mod/folder/view.php?id=620766&amp;forceview=1">Посещаемость 13.09.21</option>
+                    <option value="/mod/bigbluebuttonbn/view.php?id=202938&amp;forceview=1">Лекция  "Случайные величины и случайные векторы"</option>
+                    <option value="/mod/resource/view.php?id=209042&amp;forceview=1">Материалв к лекции "Случайные величины и случайные векторы"</option>
+                    <option value="/mod/folder/view.php?id=209051&amp;forceview=1">Посещаемость 20.09.20</option>
+                    <option value="/mod/bigbluebuttonbn/view.php?id=209055&amp;forceview=1">Лекция "Байесовская теория принятия решений  </option>
+                    <option value="/mod/resource/view.php?id=218308&amp;forceview=1">Материалы к лекции "Байесовская теория принятия решений"</option>
+                    <option value="/mod/folder/view.php?id=213630&amp;forceview=1">Посещаемость 27.09.21</option>
+                    <option value="/mod/bigbluebuttonbn/view.php?id=218300&amp;forceview=1">Лекция "Распознавание образов, описываемых гауссовскими моделями</option>
+                    <option value="/mod/resource/view.php?id=404430&amp;forceview=1">Материалы к лекции "Распознавание образов, описываемых гауссовскими моделями данных"</option>
+                    <option value="/mod/folder/view.php?id=222581&amp;forceview=1">Посещаемость 04.10.21-11.10.21</option>
+                    <option value="/mod/bigbluebuttonbn/view.php?id=222586&amp;forceview=1">Лекция "Распознавание образов для произвольных распределений"</option>
+                    <option value="/mod/resource/view.php?id=227099&amp;forceview=1">Материалы к лекции "Распознавание образов с произвольным распределением"</option>
+                    <option value="/mod/folder/view.php?id=227106&amp;forceview=1">Посещаемость 18.10.21</option>
+                    <option value="/mod/bigbluebuttonbn/view.php?id=227109&amp;forceview=1">Лекция  Распознавание образов. Параметрическая неопределенность</option>
+                    <option value="/mod/resource/view.php?id=235838&amp;forceview=1">Материалы к лекции "Распознавание образов. Параметрическая неопределенность""</option>
+                    <option value="/mod/url/view.php?id=698046&amp;forceview=1">Запись лекции 25.10.21</option>
+                    <option value="/mod/folder/view.php?id=235846&amp;forceview=1">Посещаемость 25.10.21</option>
+                    <option value="/mod/bigbluebuttonbn/view.php?id=245900&amp;forceview=1">Распознавание образов. Непараметрическая неопределенность.</option>
+                    <option value="/mod/url/view.php?id=720235&amp;forceview=1">Запись лекции 01.11.21</option>
+                    <option value="/mod/resource/view.php?id=254928&amp;forceview=1">Материалы к лекциям "Распознавание образов. Непараметрическая неопределенность" </option>
+                    <option value="/mod/folder/view.php?id=246161&amp;forceview=1">Посещаемость 01.11.21</option>
+                    <option value="/mod/bigbluebuttonbn/view.php?id=254610&amp;forceview=1">Лекция "Непараметрическая неопределенность. Метод k соседей"</option>
+                    <option value="/mod/url/view.php?id=731874&amp;forceview=1">Запись лекции 08.11.21</option>
+                    <option value="/mod/folder/view.php?id=254945&amp;forceview=1">Посещаемость 08.11.21</option>
+                    <option value="/mod/bigbluebuttonbn/view.php?id=263890&amp;forceview=1">Лекция "Распознавание образов по функции расстояния"</option>
+                    <option value="/mod/resource/view.php?id=264605&amp;forceview=1">Материалы к лекции "Распознавание образов по функции расстояния"</option>
+                    <option value="/mod/folder/view.php?id=264620&amp;forceview=1">Посещаемость 15.11.21</option>
+                    <option value="/mod/bigbluebuttonbn/view.php?id=280102&amp;forceview=1">Лекция "Нелинейные спрямляющие преобразования"</option>
+                    <option value="/mod/url/view.php?id=780986&amp;forceview=1">Ссылка на запись лекции 22.11.21</option>
+                    <option value="/mod/resource/view.php?id=280494&amp;forceview=1">Материалы к лекции "Нелинейные  спрямляющие пространства"</option>
+                    <option value="/mod/folder/view.php?id=280509&amp;forceview=1">Посещаемость 22.11.2021</option>
+                    <option value="/mod/bigbluebuttonbn/view.php?id=802093&amp;forceview=1">Лекция "Метод опорных векторов"</option>
+                    <option value="/mod/url/view.php?id=802111&amp;forceview=1">Ссылка на запись лекции 29.11.21 </option>
+                    <option value="/mod/resource/view.php?id=304323&amp;forceview=1">Материалы к лекции "Метод опорных векторов"</option>
+                    <option value="/mod/folder/view.php?id=304340&amp;forceview=1">Посещаемость 29.11.2021</option>
+                    <option value="/mod/folder/view.php?id=329549&amp;forceview=1">Посещаемость 08.12.2020</option>
+                    <option value="/mod/bigbluebuttonbn/view.php?id=354083&amp;forceview=1">Лекция "Композиционные алгоритмы"</option>
+                    <option value="/mod/url/view.php?id=823900&amp;forceview=1">Ссылка на запись лекции 06.12.21</option>
+                    <option value="/mod/url/view.php?id=863301&amp;forceview=1">Ссылка на запись лекции 13.12.21 (копия)</option>
+                    <option value="/mod/resource/view.php?id=354731&amp;forceview=1">Материалы к лекции "Композиционные алгоритмы"</option>
+                    <option value="/mod/folder/view.php?id=354780&amp;forceview=1">Посещаемость 06.12.2021</option>
+                    <option value="/mod/folder/view.php?id=380972&amp;forceview=1">Посещаемость13.12.2021</option>
+                    <option value="/mod/bigbluebuttonbn/view.php?id=399431&amp;forceview=1">Лекция "Основы кластерного анализа данных"</option>
+                    <option value="/mod/url/view.php?id=844760&amp;forceview=1">Ссылка на запись лекции 20.12.21</option>
+                    <option value="/mod/resource/view.php?id=399927&amp;forceview=1">Материалы к лекции "основы кластерного анализа"</option>
+                    <option value="/mod/folder/view.php?id=399950&amp;forceview=1">Посещаемость 20.12.2021</option>
+                    <option value="/mod/bigbluebuttonbn/view.php?id=877316&amp;forceview=1">Лекция "Основы регрессионного анализа данных" </option>
+                    <option value="/mod/url/view.php?id=877339&amp;forceview=1">Ссылка на запись лекции 20.12.27 </option>
+                    <option value="/mod/resource/view.php?id=877319&amp;forceview=1">Материалы к лекции "Основы регрессионного  анализа" </option>
+                    <option value="/mod/folder/view.php?id=877342&amp;forceview=1">Посещаемость 27.12.2027</option>
+                    <option value="/mod/bigbluebuttonbn/view.php?id=203532&amp;forceview=1">Лабораторная работа</option>
+                    <option value="/mod/bigbluebuttonbn/view.php?id=679704&amp;forceview=1">Лабораторная (группы Акимова А.В.)</option>
+                    <option value="/mod/resource/view.php?id=203864&amp;forceview=1">Лабораторная работа 1 -  Моделирование случайных величин</option>
+                    <option value="/mod/resource/view.php?id=203869&amp;forceview=1">Пример кода лабораторной работы 1</option>
+                    <option value="/mod/url/view.php?id=229156&amp;forceview=1">Посещаемость лабораторных занятий группами Акимова А.В.</option>
+                    <option value="/mod/url/view.php?id=209992&amp;forceview=1">Варианты для групп Акимова А.В.</option>
+                    <option value="/mod/resource/view.php?id=680450&amp;forceview=1">Варианты на 4,5 лабы для гр.2-2</option>
+                    <option value="/mod/assign/view.php?id=206869&amp;forceview=1">Лабораторная работа 1</option>
+                    <option value="/mod/assign/view.php?id=206873&amp;forceview=1">Лабораторная работа 2</option>
+                    <option value="/mod/assign/view.php?id=206876&amp;forceview=1">Лабораторная работа 3</option>
+                    <option value="/mod/assign/view.php?id=206880&amp;forceview=1">Лабораторная работа 4</option>
+                    <option value="/mod/url/view.php?id=690053&amp;forceview=1">Лабораторная 4 (Видеозапись от 22.10.2021)</option>
+                    <option value="/mod/assign/view.php?id=206884&amp;forceview=1">Лабораторная работа 5</option>
+                    <option value="/mod/assign/view.php?id=206885&amp;forceview=1">Лабораторная работа 6</option>
+                    <option value="/mod/url/view.php?id=796107&amp;forceview=1">Лабораторная 6 (Видеозапись от 16.11.2021)</option>
+                    <option value="/mod/assign/view.php?id=206889&amp;forceview=1">Лабораторная работа 7</option>
+                    <option value="/mod/assign/view.php?id=206896&amp;forceview=1">Лабораторная работа 8</option>
+                    <option value="/mod/assign/view.php?id=206897&amp;forceview=1">Лабораторная работа 9</option>
+                    <option value="/mod/resource/view.php?id=765836&amp;forceview=1">Список сданных лаб</option>
+                    <option value="/mod/book/view.php?id=57930&amp;forceview=1">Лекция 2</option>
+                    <option value="/mod/book/view.php?id=57939&amp;forceview=1">Лекция 4</option>
+                    <option value="/mod/book/view.php?id=57942&amp;forceview=1">Лекция 5</option>
+                    <option value="/mod/book/view.php?id=57943&amp;forceview=1">Лекция 6</option>
+                    <option value="/mod/book/view.php?id=57944&amp;forceview=1">Лекция 7</option>
+                    <option value="/mod/book/view.php?id=57945&amp;forceview=1">Лекция 8</option>
+                    <option value="/mod/book/view.php?id=57946&amp;forceview=1">Лекция 9</option>
+                    <option value="/mod/book/view.php?id=58016&amp;forceview=1">Лекция 10</option>
+                    <option value="/mod/book/view.php?id=58019&amp;forceview=1">Лекция 11</option>
+                    <option value="/mod/book/view.php?id=58020&amp;forceview=1">Лекция 12</option>
+                    <option value="/mod/book/view.php?id=58093&amp;forceview=1">Лекция 13</option>
+        </select>
+            <noscript>
+                <input type="submit" class="btn btn-secondary ml-1" value="Применить">
+            </noscript>
+    </form>
+</div>
+
+        </div>
+</div>
+    <div class="col-md-4">        <div class="float-right">
+                <a href="https://edu.vsu.ru/mod/book/view.php?id=57939&amp;forceview=1" id="next-activity-link" class="btn btn-link" title="Лекция 4">Лекция 4 ►</a>
+
+        </div>
+</div>
+</div>
+</div>
+                    
+                
