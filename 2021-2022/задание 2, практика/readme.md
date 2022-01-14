@@ -33,4 +33,4 @@ ___
     Формулировки:
     + ss
 + гсв с одинаковыми  
-    [gsv_diff.m](gsv_diff.m)  
+    [gsv_same.m](gsv_same.m)  
